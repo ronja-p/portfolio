@@ -3,3 +3,33 @@ body {
   color: #fff;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  font-size: 32px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+
+nav .nav__link {
+  font-weight: 400px;
+  letter-spacing: 4px;
+}
+
+nav .nav__logo {
+  font-weight: 700;
+  justify-self: end;
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+}
