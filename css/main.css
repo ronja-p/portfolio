@@ -33,3 +33,44 @@ nav .nav__logo {
   margin: 0 auto;
   max-width: 80%;
 }
+
+.home__title {
+  margin: 20vh auto;
+}
+
+.home h1 {
+  font-size: 96px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: 120%;
+}
+
+.home h2 {
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.home__name--first {
+  background-image: url(../images/rectangle-small.png);
+  background-repeat: no-repeat;
+  background-position: 50% 85%;
+}
+
+.home__name--last {
+  background-image: url(../images/rectangle-large.png);
+  background-repeat: no-repeat;
+  background-position: 50% 85%;
+}
+
+.home__lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home p {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
