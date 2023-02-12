@@ -9,12 +9,37 @@ a {
   color: #fff;
 }
 
+h1 {
+  font-size: 96px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: 120%;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
 nav {
   font-size: 32px;
   margin-top: 3vh;
   margin-bottom: 3vh;
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+nav .nav__links {
+  grid-column: 1/6;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav .nav__link {
@@ -25,8 +50,7 @@ nav .nav__link {
 nav .nav__logo {
   font-weight: 700;
   justify-self: end;
-  grid-column-start: 4;
-  grid-column-end: 7;
+  grid-column: 6/13;
 }
 
 .container {
@@ -36,19 +60,6 @@ nav .nav__logo {
 
 .home__title {
   margin: 20vh auto;
-}
-
-.home h1 {
-  font-size: 96px;
-  font-weight: 600;
-  letter-spacing: 4px;
-  line-height: 120%;
-}
-
-.home h2 {
-  font-size: 64px;
-  font-weight: 400;
-  letter-spacing: 4px;
 }
 
 .home__name--first {
@@ -73,4 +84,39 @@ nav .nav__logo {
   font-size: 48px;
   font-weight: 300;
   letter-spacing: 4px;
+}
+
+.about {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.about__text {
+  grid-column: 1/8;
+}
+
+.about__text--bold {
+  font-weight: 700;
+}
+
+.about__images {
+  grid-column: 9/13;
+}
+
+.about p {
+  margin-top: 42px;
+  font-family: 'Manrope', Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.about a {
+  text-decoration: underline;
+}
+
+.about img {
+  margin: 0 auto;
+  padding-top: 50px;
 }

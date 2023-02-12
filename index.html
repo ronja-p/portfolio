@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>Ronja Pietrzykowska</title>
@@ -25,9 +25,11 @@
     <div class="container">
       <!-- navbar -->
       <nav>
-        <a class="nav__link" href="#about">about</a>
-        <a class="nav__link" href="#work">work</a>
-        <a class="nav__link" href="#contact">contact</a>
+        <div class="nav__links">
+          <a class="nav__link" href="#about">about</a>
+          <a class="nav__link" href="#work">work</a>
+          <a class="nav__link" href="#contact">contact</a>
+        </div>
         <a class="nav__logo" href="#home">{ronja.p}</a>
       </nav>
       <!-- home -->
@@ -46,8 +48,50 @@
           /></a>
           <p>CODING SINCE 2022</p>
         </div>
-
-        <!-- <p>CODING SINCE 2022</p> -->
+      </section>
+      <!-- about -->
+      <section id="about" class="about">
+        <div class="about__text">
+          <h3>ABOUT</h3>
+          <p>
+            Hi, I’m Ronja Pietrzykowska, I’m a Fullstack Developer who started
+            their coding journey at the beginning of 2022. I was searching for a
+            new path where I could find challenging and fulfilling work, and
+            that’s exactly what I found in coding.
+          </p>
+          <p>
+            Since taking that leap, I’ve been learning something new every
+            single day!
+          </p>
+          <p>
+            A combination of self-directed learning and structured education (in
+            the form of a five-month traineeship at
+            <span class="about__text--bold"
+              ><a href="https://integrify.academy/international" target="_blank"
+                >Integrify Academy</a
+              ></span
+            >) have provided me with the skills and confidence needed to break
+            into this exciting industry.
+          </p>
+          <p>
+            I have experience working with some of the most modern in-demand
+            technologies in the JavaScript ecosystem (including the
+            <span class="about__text--bold">MERN stack</span>) and the eagerness
+            and curiosity to keep adding to my toolbox.
+          </p>
+          <p>
+            I’m ready for any and all opportunities which can help me continue
+            my growth as a developer. If you can see us working together I
+            encourage you to reach out to me.
+          </p>
+        </div>
+        <div class="about__images">
+          <img
+            src="/images/profile.png"
+            alt="Profile of me smiling, with a flower in my hair"
+          />
+          <img src="/images/now-listening.png" alt="" />
+        </div>
       </section>
     </div>
   </body>
