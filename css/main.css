@@ -330,12 +330,71 @@ nav .nav__logo {
 
 /* work section */
 
-.work {
+.projects {
   margin-top: 8rem;
 }
 
-.work__projects {
+.projects-grid {
+  margin: 3rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.projects-grid__item {
+  position: relative;
+  width: 38rem;
+  height: 26rem;
+  grid-area: span 1;
+}
+
+.projects-grid__item--top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80%;
+  width: 95%;
+  background: linear-gradient(91.6deg, #38005B 0%, #7A0BC0 100%);
+}
+
+.projects-grid__item--top .subheading {
+  padding-top: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+.projects-grid__item--bottom {
+  position: absolute;
+  top: 2.75rem;
+  right: 0;
+  height: 80%;
+  width: 95%;
+  background: linear-gradient(91.6deg, #7A0BC0 0%, #38005B 100%);
+}
+
+.projects-grid__item--bottom p {
+  font-size: 1.2rem;
+  padding: 0.8rem;  
+}
+
+.projects-grid__badges {
+  margin: 0.25rem auto;
+  display: flex;
+  padding: 0.8rem;
+  justify-content: space-between;
+}
+
+.projects-grid__badge {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
+  border: 0.1rem solid #fff;
+}
+
+.projects-grid__item--buttons {
+  position: absolute;
+  bottom: -3rem;
+  right: 0;
+  height: 10%;
+  width: 100%;
 }
