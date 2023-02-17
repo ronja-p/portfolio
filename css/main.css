@@ -90,7 +90,8 @@ nav .nav__logo {
 
 .container {
   margin: 0 auto;
-  max-width: 90%;
+  width: 90%;
+  max-width: 1728px;
 }
 
 @media (max-width: 992px) {
@@ -250,30 +251,21 @@ nav .nav__logo {
 .tech-stack__showcase {
   margin-top: 5rem;
   width: 100%;
-  height: 28rem;
+  padding: 3rem;
   background-color: #280e49;
   box-shadow: inset 0rem 0rem 12.5rem #0b0f1c;
   border-radius: 0.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.tech-stack__grid {
-  width: 90%;
-  height: 95%;
-  display: grid;
-  grid-template-rows: repeat(2, 50%);
-  grid-template-columns: repeat(5, 1fr);
+  flex-wrap: wrap;
+  object-fit: contain;
+  column-gap: 5rem;
+  row-gap: 2rem;
 }
 
 .tech-stack__showcase img {
-  padding: 1rem;
-  align-self: center;
-  justify-self: center;
-  object-fit: contain;
-  width: 80%;
-  max-height: 80%;
+  height: 12rem;
 }
 
 .tech-stack__lower {
@@ -293,38 +285,8 @@ nav .nav__logo {
 }
 
 @media (max-width: 992px) {
-  .tech-stack__showcase {
-    margin-top: 3rem;
-    height: 42rem;
-  }
-  .tech-stack__lower {
-    margin-top: 3rem;
-  }
-  .tech-stack__grid {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .tech-stack__grid img:nth-child(9) {
-    grid-column: 2/3;
-  }
-  .tech-stack__grid img:last-child {
-    grid-column: 3/4;
-  }
-}
-
-@media (max-width: 768px) {
-  .tech-stack__grid {
-    grid-template-rows: repeat(5, 20%);
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .tech-stack__showcase {
-    height: 56rem;
-  }
-  .tech-stack__grid img:nth-child(9) {
-    grid-column: 1/2;
-  }
-  .tech-stack__grid img:last-child {
-    grid-column: 2/3;
+  .tech-stack__showcase img {
+    height: 10rem;
   }
 }
 
@@ -356,7 +318,7 @@ nav .nav__logo {
   left: 0;
   height: 80%;
   width: 95%;
-  background: linear-gradient(91.6deg, #38005B 0%, #7A0BC0 100%);
+  background: linear-gradient(91.6deg, #38005b 0%, #7a0bc0 100%);
 }
 
 .projects-grid__item--top .subheading {
@@ -370,12 +332,12 @@ nav .nav__logo {
   right: 0;
   height: 80%;
   width: 95%;
-  background: linear-gradient(91.6deg, #7A0BC0 0%, #38005B 100%);
+  background: linear-gradient(91.6deg, #7a0bc0 0%, #38005b 100%);
 }
 
 .projects-grid__item--bottom p {
   font-size: 1.2rem;
-  padding: 0.8rem;  
+  padding: 0.8rem;
 }
 
 .projects-grid__badges {
