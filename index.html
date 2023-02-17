@@ -27,7 +27,7 @@
       <nav>
         <div class="nav__links">
           <a class="nav__link" href="#about">about</a>
-          <a class="nav__link" href="#work">work</a>
+          <a class="nav__link" href="#projects">projects</a>
           <a class="nav__link" href="#contact">contact</a>
         </div>
         <a class="nav__logo" href="#home">{ronja.p}</a>
@@ -44,7 +44,7 @@
         </div>
         <div class="home__lower">
           <a href="#about"
-            ><img src="/images/arrow-down.png" alt="Down arrow"
+            ><img src="./images/arrow-down.png" alt="Down arrow"
           /></a>
           <p>
             CODING <br />
@@ -90,12 +90,12 @@
         </div>
         <img
           class="about__image about__image--profile"
-          src="/images/profile.png"
+          src="./images/profile.png"
           alt="Profile of me smiling, with a flower in my hair"
         />
         <img
           class="about__image about__image--now-listening"
-          src="/images/now-listening.png"
+          src="./images/now-listening.png"
           alt=""
         />
       </section>
@@ -104,41 +104,54 @@
         <p class="subheading">ON MY JOURNEY SO FAR</p>
         <h3>I'VE WORKED WITH...</h3>
         <div class="tech-stack__showcase">
-          <div class="tech-stack__grid">
-            <img src="/images/logos/react.png" alt="" />
-            <img src="/images/logos/typescript.png" alt="" />
-            <img src="/images/logos/node.png" alt="" />
-            <img src="/images/logos/express.png" alt="" />
-            <img src="/images/logos/git.png" alt="" />
-            <img src="/images/logos/figma.png" alt="" />
-            <img src="/images/logos/postgresql.png" alt="" />
-            <img src="/images/logos/mongodb.png" alt="" />
-            <img src="/images/logos/docker.png" alt="" />
-            <img src="/images/logos/aws.png" alt="" />
-          </div>
+            <img src="./images/logos/react.png" alt="React logo" />
+            <img src="./images/logos/typescript.png" alt="TypeScript logo" />
+            <img src="./images/logos/node.png" alt="Node logo" />
+            <img src="./images/logos/express.png" alt="Express logo" />
+            <img src="./images/logos/git.png" alt="Git logo" />
+            <img src="./images/logos/figma.png" alt="Figma logo" />
+            <img src="./images/logos/postgresql.png" alt="PostgreSQL logo" />
+            <img src="./images/logos/mongodb.png" alt="MongoDB logo" />
+            <img src="./images/logos/docker.png" alt="Docker logo" />
+            <img src="./images/logos/aws.png" alt="AWS logo" />
         </div>
         <div class="tech-stack__lower">
-          <a href="#work"
-            ><img src="/images/arrow-down.png" alt="Down arrow"
+          <a href="#projects"
+            ><img src="./images/arrow-down.png" alt="Down arrow"
           /></a>
           <p class="subheading">...AND MUCH MORE</p>
         </div>
       </section>
       <!-- work -->
-      <section id="work" class="work">
+      <section id="projects" class="projects">
         <p class="subheading">SOME OF</p>
-        <h3>MY WORK</h3>
-        <div class="work__projects">
-          <div class="work__project">
+        <h3>MY PROJECTS</h3>
+        <div class="projects-grid">
+          <div class="projects-grid__item">
+            <div class="projects-grid__item--top">
             <p class="subheading">Project Management System</p>
+            
           </div>
-          <div class="work__project"><p class="subheading">Portfolio</p></div>
+          <div class="projects-grid__item--bottom"><p>Library management app to browse, borrow and return digital books. </p><p>User, admin and book management system running on a Node server with Express, connected to a NoSQL database. Token based authentication with cookies and JWT. Scalable, reusable and responsive frontend made with React and MUI. Handles form data and validation with Formik, and CRUD operations over HTTP.</p>
+          <div class="projects-grid__badges">
+            <span class="projects-grid__badge">TypeScript</span>
+            <span class="projects-grid__badge">React</span>
+            <span class="projects-grid__badge">Redux</span>
+            <span class="projects-grid__badge">Node</span>
+            <span class="projects-grid__badge">Express</span>
+            <div>
+          </div>
+          <div class="projects-grid__item--buttons"><button>VIEW</button>
+            <button>SOURCE CODE</button></div>
+          
+          </div>
+          <!-- <div class="work__project"><p class="subheading">Portfolio</p></div>
           <div class="work__project">
             <p class="subheading">Library Management</p>
           </div>
           <div class="work__project">
             <p class="subheading">Countries App</p>
-          </div>
+          </div> -->
         </div>
       </section>
     </div>
