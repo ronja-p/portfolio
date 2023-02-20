@@ -94,6 +94,14 @@ nav .nav__logo {
   max-width: 1728px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.no-display {
+  display: none;
+}
+
 @media (max-width: 992px) {
   nav {
     font-size: 1.75rem;
@@ -350,7 +358,6 @@ nav .nav__logo {
 }
 
 .projects__project--badges {
-  margin: 0 auto;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
@@ -382,13 +389,21 @@ nav .nav__logo {
 }
 
 .projects__button--view {
+  display: flex;
+  align-items: center;
   border: 3px solid #7a0bc0;
   background: none;
   color: #fff;
 }
 
 .projects__button--source {
+  display: flex;
+  align-items: center;
   border: 3px;
   background: linear-gradient(91.6deg, #38005b 0%, #7a0bc0 100%);
   color: #fff;
+}
+
+.projects img {
+  margin: 0 auto;
 }
