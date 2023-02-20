@@ -46,6 +46,9 @@ h3 {
   h3 {
     font-size: 2.5rem;
   }
+  .subheading {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -109,7 +112,6 @@ nav .nav__logo {
   nav {
     font-size: 1.75rem;
   }
-
   nav .nav__links {
     flex-direction: column;
   }
@@ -407,9 +409,6 @@ nav .nav__logo {
   color: #fff;
 }
 
-.projects img {
-  margin: 0 auto;
-}
 /* contact */
 
 .contact {
@@ -417,7 +416,7 @@ nav .nav__logo {
 }
 
 .contact h2,
-.contact h3 {
+.contact .subheading {
   text-align: center;
 }
 
@@ -465,6 +464,9 @@ nav .nav__logo {
   .contact__links {
     flex-direction: column;
   }
+  .contact__links a {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -490,4 +492,8 @@ nav .nav__logo {
 }
 
 @media (max-width: 768px) {
+  .contact__info p,
+  .contact__links a {
+    font-size: 1.75rem;
+  }
 }
