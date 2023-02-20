@@ -517,3 +517,18 @@ footer {
     font-size: 1.75rem;
   }
 }
+
+@media (max-width: 768px) {
+  .projects__project {
+    width: 38rem;
+    height: 39rem;
+  }
+  .projects__project--top .subheading {
+    font-size: 1.6rem;
+    padding: 0.75rem 0.75rem;
+  }
+  .projects__project--badge {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+}
