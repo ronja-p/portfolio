@@ -43,6 +43,9 @@ h3 {
   h2 {
     font-size: 3rem;
   }
+  h3 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -53,7 +56,7 @@ h3 {
     font-size: 2.375rem;
   }
   h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .subheading {
     font-size: 1.25rem;
@@ -414,7 +417,7 @@ nav .nav__logo {
 }
 
 .contact h2,
-h3 {
+.contact h3 {
   text-align: center;
 }
 
@@ -447,7 +450,7 @@ h3 {
 }
 
 .contact__links a {
-  margin-right: 3rem;
+  margin-left: 3rem;
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 0.25rem;
@@ -455,4 +458,36 @@ h3 {
 
 .contact__links img {
   display: inline;
+  height: 50%;
+}
+
+@media (max-width: 1336px) {
+  .contact__links {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact__info p,
+  .contact__links a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__info {
+    width: 100%;
+  }
+  .contact__links {
+    margin-top: 3rem;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
 }
