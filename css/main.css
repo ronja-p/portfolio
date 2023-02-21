@@ -83,7 +83,7 @@ nav .nav__links {
 }
 
 nav .nav__link {
-  padding-right: 3.5rem;
+  margin-right: 3.5rem;
   font-weight: 400;
   letter-spacing: 0.25rem;
 }
