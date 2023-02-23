@@ -137,6 +137,34 @@ footer {
   }
 }
 
+/* animations */
+
+/* nav links */
+
+.nav__link {
+  box-shadow: inset 0 0 0 0 #1a1a40;
+  color: #fff;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.nav__link:hover {
+  box-shadow: inset 200px 0 #fff;
+  color: #1a1a40;
+}
+
+/* arrows */
+
+.arrow-down {
+  transform-origin: center center;
+  transition: 0.6s;
+}
+
+.arrow-down:hover {
+  transform: rotateY(180deg);
+}
+
 /* home section */
 
 .home__title {
@@ -159,10 +187,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.home__lower img {
-  padding-right: 1.25rem;
 }
 
 .home__lower p {
@@ -306,10 +330,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.tech-stack__lower img {
-  padding-right: 1.25rem;
 }
 
 .tech-stack__lower p {
