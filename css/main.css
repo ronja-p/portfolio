@@ -167,8 +167,12 @@ footer {
 
 /* home section */
 
-.home__title {
-  margin: 20vh auto;
+.home__upper {
+  margin: 20vh 0;
+}
+
+.home__text {
+  position: relative;
 }
 
 .home__name--first {
