@@ -1,6 +1,6 @@
 :root {
   --bg-color: #1a1a40;
-  --typewriter-speed: 4s;
+  --typewriter-speed: 2s;
 }
 
 body {
@@ -195,33 +195,39 @@ footer {
   font-weight: 300;
   letter-spacing: 0.5rem;
   line-height: 130%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.home__animation-text {
+.home__typewriter-animation {
+  position: relative;
   width: max-content;
 }
 
-.home__animation-text::before,
-.home__animation-text::after {
+.home__typewriter-animation::after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-.home__animation-text::before {
-  background-color: var(--bg-color);
-  animation: typewriter var(--typewriter-speed) steps(17) 0.5s forwards;
-}
-
-.home__animation-text::after {
-  width: 0.25rem;
+  width: 2px;
+  height: 100%;
   background-color: #fff;
-  animation: typewriter var(--typewriter-speed) steps(17) 0.5s forwards,
-    blink steps(17) 750ms infinite;
+  animation: typewriter var(--typewriter-speed) steps(10) 0.5s forwards,
+    blink 0.75s steps(10) infinite;
+}
+
+.home__typewriter-animation::before {
+  content: '';
+  position: absolute;
+  background-color: #1a1a40;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: typewriter var(--typewriter-speed) steps(10) 0.5s forwards;
 }
 
 @keyframes typewriter {
@@ -236,14 +242,20 @@ footer {
   }
 }
 
+@media (max-width: 1200px) {
+  .home__lower-text {
+    font-size: 3.25rem;
+  }
+}
+
 @media (max-width: 992px) {
-  .home__typewriter-animation-text {
+  .home__lower-text {
     font-size: 2.375rem;
   }
 }
 
 @media (max-width: 768px) {
-  .home__typewriter-animation-text {
+  .home__lower-text {
     font-size: 2rem;
   }
 }
